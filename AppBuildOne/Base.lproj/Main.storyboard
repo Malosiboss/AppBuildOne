@@ -15,10 +15,44 @@
                     <view key="view" contentMode="scaleToFill" id="Cho-9n-FLy" customClass="UINavigationBar">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DEN-rv-JjY">
+                                <rect key="frame" x="175" y="595" width="64" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Calculate"/>
+                                <connections>
+                                    <action selector="pressedCalculateButton:" destination="dd7-GR-5um" eventType="touchUpInside" id="M2W-B1-4wR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Answer is:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1CA-eT-BdC">
+                                <rect key="frame" x="65" y="215" width="112" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAI-c8-wbP">
+                                <rect key="frame" x="197" y="214" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAg-hz-x6A">
+                                <rect key="frame" x="221" y="215" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="1mj-el-7IT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="AbN-3L-XKd"/>
+                    <connections>
+                        <outlet property="label1" destination="mAg-hz-x6A" id="9nf-Yb-VfT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VPF-ji-R9U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -96,11 +130,11 @@
             </objects>
             <point key="canvasLocation" x="-395" y="89"/>
         </scene>
-        <!--Item 1-->
+        <!--About-->
         <scene sceneID="1uY-62-AHp">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="H5V-Pf-nPu" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="sgT-vI-6CJ"/>
+                    <tabBarItem key="tabBarItem" title="About" image="info.circle.fill" catalog="system" id="sgT-vI-6CJ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zmu-8g-4pS">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -115,11 +149,11 @@
             </objects>
             <point key="canvasLocation" x="493" y="-214"/>
         </scene>
-        <!--Item 2-->
+        <!--Calculator-->
         <scene sceneID="qk5-Yp-gyp">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XFk-ep-0nj" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="Yvd-9v-KFJ"/>
+                    <tabBarItem key="tabBarItem" title="Calculator" image="plus" catalog="system" id="Yvd-9v-KFJ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="YUz-rN-cks">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -136,6 +170,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="info.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
