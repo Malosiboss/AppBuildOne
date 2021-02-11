@@ -15,6 +15,7 @@
 		4F41ABC325D5BE0D00237B52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F41ABC125D5BE0D00237B52 /* LaunchScreen.storyboard */; };
 		4F41ABCE25D5BE0D00237B52 /* AppBuildOneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F41ABCD25D5BE0D00237B52 /* AppBuildOneTests.swift */; };
 		4F41ABD925D5BE0D00237B52 /* AppBuildOneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F41ABD825D5BE0D00237B52 /* AppBuildOneUITests.swift */; };
+		4F41ABEA25D5BF3F00237B52 /* seconedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F41ABE925D5BF3F00237B52 /* seconedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		4F41ABD425D5BE0D00237B52 /* AppBuildOneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppBuildOneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F41ABD825D5BE0D00237B52 /* AppBuildOneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBuildOneUITests.swift; sourceTree = "<group>"; };
 		4F41ABDA25D5BE0D00237B52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F41ABE925D5BF3F00237B52 /* seconedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = seconedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				4F41ABB625D5BE0C00237B52 /* AppDelegate.swift */,
 				4F41ABB825D5BE0C00237B52 /* SceneDelegate.swift */,
 				4F41ABBA25D5BE0C00237B52 /* ViewController.swift */,
+				4F41ABE925D5BF3F00237B52 /* seconedViewController.swift */,
 				4F41ABBC25D5BE0C00237B52 /* Main.storyboard */,
 				4F41ABBF25D5BE0D00237B52 /* Assets.xcassets */,
 				4F41ABC125D5BE0D00237B52 /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			files = (
 				4F41ABBB25D5BE0C00237B52 /* ViewController.swift in Sources */,
 				4F41ABB725D5BE0C00237B52 /* AppDelegate.swift in Sources */,
+				4F41ABEA25D5BF3F00237B52 /* seconedViewController.swift in Sources */,
 				4F41ABB925D5BE0C00237B52 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
